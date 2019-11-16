@@ -21,7 +21,7 @@
 							</p>
 							<p>
 									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés <br> une réalisation de <a href="http://rodhousetechnology.com" style="color:red" target="_blank">RodHouse Technology</a>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés <br> une réalisation de <a href="http://rodhousetechnology.com" style="color:red" target="_blank">Rod'House Technology</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 							</p>
 						</div>
@@ -69,9 +69,9 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 	<script src="<?php echo js_url('isotope.pkgd.min'); ?>"></script>
 	<script src="<?php echo js_url('jquery.nice-select.min'); ?>"></script>
 	<script src="<?php echo js_url('jquery.magnific-popup.min'); ?>"></script>
-	<script src="<?php echo js_url('countdown'); ?>"></script>
 	<script src="<?php echo js_url('jquery.sticky'); ?>"></script>
 	<script src="<?php echo js_url('main'); ?>"></script>
+	<script src="<?php echo js_url('sweet'); ?>"></script>
 </body>
 
 </html>

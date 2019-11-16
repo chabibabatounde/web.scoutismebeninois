@@ -11,164 +11,47 @@
 			</div>
 
 			<div class="row">
-				<div class="col-lg-6">
-					<div class="single_upcoming_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo img_url('event/e1.jpg'); ?>" alt="">
-									<div class="date">
-										17 Mar
-									</div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Working Syran Children</a>
-									</h3>
-									<p>
-										Seed the life upon you are creat
-									</p>
-									<div class="d-flex count_time justify-content-lg-start justify-content-center" id="clockdiv1">
-										<div class="single_time">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="single_time">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="single_time">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-									</div>
-									<a href="#" class="primary-btn2">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="single_upcoming_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo img_url('event/e2.jpg'); ?>" alt="">
-									<div class="date">
-										19 May
-									</div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Help And Homeless</a>
-									</h3>
-									<p>
-										Seed the life upon you are creat
-									</p>
-									<div class="d-flex count_time justify-content-lg-start justify-content-center" id="clockdiv2">
-										<div class="single_time">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="single_time">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="single_time">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-									</div>
-									<a href="#" class="primary-btn2">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 
-				<div class="col-lg-6">
-					<div class="single_upcoming_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo img_url('event/e3.jpg'); ?>" alt="">
-									<div class="date">
-										10 June
+				<?php
+					foreach ($evenements as $evenement) {
+				?>
+					<div class="col-lg-6">
+						<div class="single_upcoming_event">
+							<div class="row align-items-center">
+								<div class="col-lg-6 col-md-6">
+									<figure>
+										<img class="img-fluid w-100" src="<?php echo img_url('event/'.$evenement['couverture']); ?>" alt="">
+									</figure>
+								</div>
+								<div class="col-lg-6 col-md-6">
+									<div class="content_wrapper">
+										<h3 class="title">
+											<a href="<?php echo lien("Evenement",'lecture/'.$evenement['idEvenement']); ?>"><?php echo $lessEvent($evenement['titre']); ?></a>
+										</h3>
+										<p>
+											<?php echo ($evenement['nomCategorie']); ?>
+										</p>
+										<div class="d-flex count_time justify-content-lg-start justify-content-center" id="clockdiv1">
+											<div class="single_time">
+												<h4 class="days"><?php echo $getDate($evenement['dateEvenement']); ?> </h4>
+											</div>
+											<div class="single_time">
+												<h4 class="hours"><?php echo $getMois($evenement['dateEvenement']); ?> </h4>
+											</div>
+											<div class="single_time">
+												<h4 class="minutes"><?php echo $getAnnee($evenement['dateEvenement']); ?> </h4>
+											</div>
+										</div>
+										<a href="<?php echo lien("Evenement",'lecture/'.$evenement['idEvenement']); ?>" class="primary-btn2">Détails</a>
 									</div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Get Volunteeer Idea 2019</a>
-									</h3>
-									<p>
-										Seed the life upon you are creat
-									</p>
-									<div class="d-flex count_time justify-content-lg-start justify-content-center" id="clockdiv3">
-										<div class="single_time">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="single_time">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="single_time">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-									</div>
-									<a href="#" class="primary-btn2">Learn More</a>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-
-				<div class="col-lg-6">
-					<div class="single_upcoming_event">
-						<div class="row align-items-center">
-							<div class="col-lg-6 col-md-6">
-								<figure>
-									<img class="img-fluid w-100" src="<?php echo img_url('event/e4.jpg'); ?>" alt="">
-									<div class="date">
-										18 July
-									</div>
-								</figure>
-							</div>
-							<div class="col-lg-6 col-md-6">
-								<div class="content_wrapper">
-									<h3 class="title">
-										<a href="event-details.html">Get Volunteeer Idea 2019</a>
-									</h3>
-									<p>
-										Seed the life upon you are creat
-									</p>
-									<div class="d-flex count_time justify-content-lg-start justify-content-center" id="clockdiv4">
-										<div class="single_time">
-											<h4 class="days">552</h4>
-											<p>Days</p>
-										</div>
-										<div class="single_time">
-											<h4 class="hours">08</h4>
-											<p>Hours</p>
-										</div>
-										<div class="single_time">
-											<h4 class="minutes">45</h4>
-											<p>Minutes</p>
-										</div>
-									</div>
-									<a href="#" class="primary-btn2">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				<?php
+					}
+				?>
 			</div>
 		</div>
 	</section>
