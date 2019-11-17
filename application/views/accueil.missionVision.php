@@ -13,7 +13,7 @@
 					<div class="feature-item">
 						<h4>Mission</h4>
 						<p>
-							Le Scoutisme Béninois a pour mission – en partant des valeurs énoncées dans la promesse et la loi
+							Le Scoutisme Béninois a pour mission  – en partant des valeurs énoncées dans la promesse et la loi
 scoute – de contribuer à l’éducation des jeunes afin de participer à la construction d’un monde meilleur peuplé de personnes épanouies, prêtes à jouer un rôle constructif dans la société
 						</p>
 					</div>

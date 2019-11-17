@@ -8,7 +8,7 @@
 			<div class="row justify-content-lg-end align-items-center banner-content">
 				<div class="col-lg-5">
 					<h1 class="text-white">Agenda scout</h1>
-					<p><?php echo $evenement['titre']?></p>
+					<p><?php echo $evenement['titre']?> </p>
 				</div>
 			</div>
 		</div>

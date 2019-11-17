@@ -4,7 +4,7 @@ class Newsletter_model extends CI_Model
 {
 	public function gets()
 	{
-		$query = $this->db->query('SELECT * FROM Newsletter', array());
+		$query = $this->db->query('SELECT nom, email FROM Newsletter', array());
 		return ($query->result_array());
 	}
 

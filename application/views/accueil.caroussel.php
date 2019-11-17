@@ -7,7 +7,7 @@
 					<h1>
 						6444 Scouts, 7 Régions, 40 Districs et 120 Groupes
 					</h1>
-					<a href="#" class="primary-btn">
+					<a href="<?php echo lien('Contact','')?>" class="primary-btn">
 						Rejoignez nous!
 						<i class="ti-angle-right ml-1"></i>
 					</a>

@@ -20,16 +20,27 @@
 				<h3 class="mb-30">Retrouvez tous nos documents en téléchargement libre dans la bibliotheque du scoutisme béninois</h3>
 				<div class="progress-table-wrap">
 					<div class="progress-table">
-						<div class="table-head">
-							<div class="country">Titre du document</div>
-							<div class="visit">Nb Téléchargement</div>
-							<div class="percentage"></div>
-						</div>
-						<div class="table-row">
-							<div class="country">Titre du document</div>
-							<div class="visit">645032</div>
-							<div class="percentage"></div>
-						</div>
+						<center>
+							<input style="width:99%; border:none; padding-bottom:05px;	 padding-top:05px;	 border-bottom: solid 1px black;"  onkeyup="rechercher(this)" id="recherche" type="" name="" placeholder="Que cherchez-vous?">
+						</center>
+						<br>
+						<?php
+							foreach ($livres as $livre) {
+						?>
+							<div title="<?php echo $livre['nomDocument']; ?>" class="table-row" style="padding-left: 20px;">
+								<a href="<?php echo biblio_url($livre['fichier']) ?>">
+									<?php echo $livre['nomDocument']; ?>
+									<span style="display: block; color: black;">
+										Mise à jour le 
+										<?php echo $getDate($livre['dateAjout']); ?> 
+										<?php echo $getMois($livre['dateAjout']); ?> 
+										<?php echo $getAnnee($livre['dateAjout']); ?>
+									</span>
+								</a>
+							</div>
+						<?php
+							}
+						?>
 					</div>
 				</div>
 			</div>
@@ -38,3 +49,19 @@
 	<?php
 	require 'footer.php';
 	?>
+
+	<script>
+		function rechercher(input) {
+			let recherche = input.value;
+			recherche = recherche.toUpperCase();
+  			let table = document.getElementsByClassName("table-row");
+  			for (var i = table.length - 1; i >= 0; i--) {
+  				let titre = table[i].getAttribute('title').toUpperCase();
+  				if (titre.indexOf(recherche) > -1) {
+					table[i].style.display = "";
+				} else {
+					table[i].style.display = "none";
+				}
+  			}
+		}
+	</script>

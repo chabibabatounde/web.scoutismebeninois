@@ -9,7 +9,7 @@
 					<div id="mc_embed_signup">
 						<div class="row align-items-center">
 							<div class="col-lg-5 mb-lg-0 mb-3">
-								<input class="form-control" id='' placeholder="Votre nom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre nom'"
+								<input class="form-control" id='newsNom' placeholder="Votre nom" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Votre nom'"
 								 required="" type="email" />
 							</div>
 							<div class="col-lg-5 mb-lg-0 mb-3">

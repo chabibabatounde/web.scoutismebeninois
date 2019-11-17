@@ -26,6 +26,11 @@ if ( ! function_exists('lib_url')){
 		return urlDeBase() . 'assets/lib/' . $lib ;
 	}
 }
+if ( ! function_exists('biblio_url')){
+	function biblio_url($lib){
+		return urlDeBase() . 'assets/mediatheque/livre/' . $lib ;
+	}
+}
 if ( ! function_exists('urlDeBase')){
 	function urlDeBase(){
 		return base_url();

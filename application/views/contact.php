@@ -8,7 +8,11 @@
 			<div class="row justify-content-lg-end align-items-center banner-content">
 				<div class="col-lg-5">
 					<h1 class="text-white">Nous contacter</h1>
-					<p>Trouvez ici tous nos moyens de contact </p>
+					<p>
+          <?php
+            echo $message;
+          ?>
+           </p>
 				</div>
 			</div>
 		</div>
@@ -18,10 +22,14 @@
     	<div class="container">
 	      <div class="row">
         <div class="col-12">
+          <?php
+            echo $message;
+          ?>
           <h2 class="contact-title">Veuillez remplir le formulaire</h2>
+
         </div>
         <div class="col-lg-8">
-          <form class="form-contact contact_form" action="contact_process.php" method="post" id="contactForm"
+          <form class="form-contact contact_form" action="" method="post" id="contactForm"
             novalidate="novalidate">
             <div class="row">
               <div class="col-12">

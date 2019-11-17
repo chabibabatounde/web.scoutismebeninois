@@ -10,7 +10,7 @@ if ( ! function_exists('initSession')){
 
 	$reponse['showDate'] = function ($date)
 	{
-		return $date;
+		return substr($date, 8 , 2).'/'.substr($date, 5 , 2).'/'.substr($date, 0 , 4);
 	};
 
 	$reponse['getMois'] = function ($date)

@@ -15,14 +15,18 @@
 						<div class="single-footer-widget tp_widgets">
 							<h4 class="footer_title large_title">Scoutisme Béninois</h4>
 							<p>
-							Association éducative pour les jeunes, membre de L’OMMS depuis 1964, volontaire, non politique,
-				            non militaire, ouverts à tous. Mouvement de jeunes et d’adultes engagés volontairement pour promouvoir une éducation non formelle, 
-				            complémentaire de la famille et de l’école. En tant que Organisation Non gouvernementale, il s’adresse à tous les jeunes, garçons et filles, sans aucune distinction d’origine sociale et ethnique, religieuse ou culturelle.
+								Association éducative pour les jeunes, membre de L’OMMS depuis 1964, volontaire, non politique,
+					            non militaire, ouverts à tous. Mouvement de jeunes et d’adultes engagés volontairement pour promouvoir une éducation non formelle, 
+					            complémentaire de la famille et de l’école. En tant que Organisation Non gouvernementale, il s’adresse à tous les jeunes, garçons et filles, sans aucune distinction d’origine sociale et ethnique, religieuse ou culturelle.
 							</p>
 							<p>
-									<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous droits reservés <br> une réalisation de <a href="http://rodhousetechnology.com" style="color:red" target="_blank">Rod'House Technology</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+								Copyright &copy;
+
+								<script>document.write(new Date().getFullYear());</script>
+								Tous droits reservés <br>
+								<a target="_blank" href="<?php echo lien('Web','login')?>" style="color:green">Connexion</a><br>
+								une réalisation de 
+								<a href="http://rodhousetechnology.com" style="color:red" target="_blank">Rod'House Technology</a><br>
 							</p>
 						</div>
 					</div>
@@ -73,5 +77,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tous 
 	<script src="<?php echo js_url('main'); ?>"></script>
 	<script src="<?php echo js_url('sweet'); ?>"></script>
 </body>
-
+<?php
+	try {
+	  if(file_exists('compteur_visites.txt'))
+	  {
+		$compteur_f = fopen('compteur_visites.txt', 'r+');
+		$compte = fgets($compteur_f);
+	  }
+	  else
+	  {
+		$compteur_f = fopen('compteur_visites.txt', 'a+');
+		$compte = 0;
+	  }
+	  if(!isset($_SESSION['compteur_de_visite']))
+	  {
+		$_SESSION['compteur_de_visite'] = 'visite';
+		$compte++;
+		fseek($compteur_f, 0);
+		fputs($compteur_f, $compte);
+	  }
+	  fclose($compteur_f);
+	}
+	catch (Exception $e) {
+	}
+?>
 </html>

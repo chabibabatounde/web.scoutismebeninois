@@ -7,9 +7,12 @@ class Article extends CI_Controller {
 		$variables = initSession("");
 		$this->load->model('Article_model','Article');
 		$id = base_convert($id, 14,10);
+		$this->Article->lecture($id)[0];
 		$variables['article']=$this->Article->get($id)[0];
 		$variables['titrePage']=$variables['article']['titre'];
 		$this->load->view('article',$variables);
+
+
 	}
 
 	public function index()

@@ -68,7 +68,7 @@
 						</li>
 						<li><a class="" href="<?php echo lien('Mediatheque','bibliotheque'); ?>">Bibliothèque</a></li>
 
-						<li class="dropdown">
+						<!--li class="dropdown">
 							<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
 								Portofolio
 							</a>
@@ -76,7 +76,7 @@
 								<a class="dropdown-item" href="<?php echo lien('Portofolio','inscription'); ?>">S'inscrire</a>
 								<a class="dropdown-item" href="<?php echo lien('Portofolio','consulter'); ?>">Consulter</a>
 							</div>
-						</li>
+						</li-->
 						<li><a href="<?php echo lien('Contact',''); ?>">Contact</a></li>
 					</ul>
 				</div>

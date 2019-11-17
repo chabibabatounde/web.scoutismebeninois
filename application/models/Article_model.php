@@ -19,30 +19,46 @@ class Article_model extends CI_Model
 		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie ORDER BY idArticle DESC LIMIT 24 ', array());
 		return ($query->result_array());
 	}
+	public function getAll()
+	{
+		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie ORDER BY idArticle DESC ', array());
+		return ($query->result_array());
+	}
 	public function getByCategorie($id)
 	{
 		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie AND Categorie.idCategorie = ? ORDER BY idArticle DESC LIMIT 24 ', array($id));
 		return ($query->result_array());
 	}
-
-
-
-
-
-	public function delete()
+	public function add($post)
 	{
 		$resultat = false;
-		$operation = $this->db->query('INSERT INTO Newsletter VALUES (Null,?)',array($mail));
+		$operation = $this->db->query('INSERT INTO Article VALUES (Null,?,?,?,?,?,NOW())',array(
+			$post['categorie'],
+			$post['titre'],
+			$post['couverture'],
+			$post['contenu'],
+			0
+		));
 		if($operation)
 		{
 			$resultat = true;
 		}
 		return $resultat;
 	}
-	public function update()
+	public function del($id)
 	{
 		$resultat = false;
-		$operation = $this->db->query('INSERT INTO Newsletter VALUES (Null,?)',array($mail));
+		$operation = $this->db->query('DELETE FROM Article WHERE idArticle = ?',array($id));
+		if($operation)
+		{
+			$resultat = true;
+		}
+		return $resultat;
+	}
+	public function lecture($id)
+	{
+		$resultat = false;
+		$operation = $this->db->query('UPDATE Article SET nmbreLu = nmbreLu+1 WHERE idArticle = ?',array($id));
 		if($operation)
 		{
 			$resultat = true;
@@ -50,17 +66,12 @@ class Article_model extends CI_Model
 		return $resultat;
 	}
 
-	public function search($pays, $ville)
+	public function update($tableau, $id)
 	{
-		$query = $this->db->query('SELECT * FROM Pharmacie, Ville where Pharmacie.ville = Ville.idVille AND Pharmacie.pays = ? AND Pharmacie.ville = ?', array($pays, $ville));
-		return ($query->result_array());
+		$this->db->where('idArticle',$id);
+		return $this->db->update('Article',$tableau);
 	}
 
-	public function setExperience($tableau)
-	{
-		/*$data=array('periode'=>$tableau['periode'],'poste'=>$tableau['poste'],'structure'=>$tableau['structure'],'commentaire'=>$tableau['commentaire']);
-		$this->db->where('idExperience',$tableau['idExperience']);
-		return $this->db->update('Experience',$data);*/
-	}
+	
 
 }
