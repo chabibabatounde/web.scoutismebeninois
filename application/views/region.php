@@ -19,86 +19,97 @@
 	    <div class="container">
 			<h3 class="text-heading">Commissariat Scout de Région</h3>
 	      	<div class="row">
-		      	<p> Le commissariat de Région est l’organe exécutif de l’Association au niveau régional. Le Commissaire Scout de Région en est le premier responsable. Il est élu pour un mandat de trois ans renouvelable une (1) fois. Le Commissariat de région  est composé de membres proposés par le Commissaire Scout de Région et apprécié par la Conférence régionale si elle est en session ou par le Conseil Régional entre deux (02) sessions de celle-ci. Il met en œuvre la vision du Commissaire Général à la base.</p>
-
-		      	<div class="col-lg-4 posts-list">
-					<div class="blog-author">
-			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
-			              <div class="media-body">
-			                <h4>Hylarion YAROU </h4>
-			                <p>CSR Atacora-Donga</p>
-			              </div>
-			            </div>
-		            </div>
-		        </div>
+		      	<p> Le commissariat de Région est l’organe exécutif de l’Association au niveau régional. Le Commissaire Scout de Région (C.S.R) en est le premier responsable. Il est élu pour un mandat de trois ans renouvelable une (1) fois. Le Commissariat de région  est composé de membres proposés par le Commissaire Scout de Région et apprécié par la Conférence régionale si elle est en session ou par le Conseil Régional entre deux (02) sessions de celle-ci. Il met en œuvre la vision du Commissaire Général à la base.</p>
 
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/yessoufa.jpg') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Jean Paul IBIKOUNLE </h4>
-			                <p>CSR Atlantique-Littoral</p>
+			                <h4>Yessoufa YAROU</h4>
+			                <p>C.S.R Atacora-Donga</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img style="border-radius: 0px" src="<?php echo img_url('organisation/region/csr-atl-lit.jpg') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Gilberte GUEZO </h4>
-			                <p>CSR Borgou-Alibori</p>
+			                <h4>Augustin BOYA</h4>
+			                <p>C.S.R Atlantique Littoral</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img style="border-radius: 0px" src="<?php echo img_url('organisation/region/lewis.jpg') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Léonard TCHIBOZO</h4>
-			                <p>CSR Mono-Couffo</p>
+			                <h4>Lewis AHISSOU</h4>
+			                <p>C.S.R Borgou-Alibori</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/mono_csr.jpg') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Florent HOUNKPEATE </h4>
-			                <p>CSR(p.i.) Ouémé-Plateau</p>
+			                <h4>Bruno DANSI</h4>
+			                <p>C.S.R Mono-Couffo</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img  style="border-radius: 0px"  src="<?php echo img_url('organisation/region/florent.png') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Epiphane ABOGOURIN </h4>
-			                <p>CSR Universités</p>
+			                <h4> Florent HOUNKPEATE </h4>
+			                <p>C.S.R Ouémé Plateau</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
 		        <div class="col-lg-4 posts-list">
 					<div class="blog-author">
 			            <div class="media align-items-center">
-			              <img src="<?php echo img_url('BN/membre.png') ?>" alt="">
+			              <img style="border-radius: 0px" src="<?php echo img_url('organisation/region/csr-u.jpg') ?>" alt="">
 			              <div class="media-body">
-			                <h4>Myriam J. AGASSOUNON</h4>
-			                <p>CSR Zou-Collines</p>
+			                <h4>Parfait OLOUKPEDE</h4>
+			                <p>C.S.R Universités</p>
 			              </div>
 			            </div>
 		            </div>
 		        </div>
+
+		        <div class="col-lg-4 posts-list">
+					<div class="blog-author">
+			            <div class="media align-items-center">
+			              <img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/daasi.jpg') ?>" alt="">
+			              <div class="media-body">
+			                <h4>Ronald DAASI</h4>
+			                <p>C.S.R Zou-Collines</p>
+			              </div>
+			            </div>
+		            </div>
+		        </div>
+		        
+
+		        
+		        </div>
+
+
 			</div>
 		</div>
 	</section>

@@ -17,10 +17,23 @@ class Organisation extends CI_Controller {
 		$variables = initSession("Commissariat de Région Scoute");
 		$this->load->view('region',$variables);
 	}
-	public function forumDesJeunes()
+	public function jeuneConseillers()
 	{
 		$variables = initSession("Forum des jeunes du scoutisme béninois");
-		$this->load->view('forumDesJeunes',$variables);
+		$this->load->view('jeuneConseillers',$variables);
 	}
+	public function comiteNational(){
+		$variables = initSession("Comité National");
+		$this->load->view('comiteNational',$variables);
+	}
+	public function verificateurs(){
+		$variables = initSession("Vérificatreurs de Comptes");
+		$this->load->view('verificateurs',$variables);
+	}
+	public function ancienscomissaires(){
+		$variables = initSession("Anciens Secrétaires/Commissaires Généraux du Scoutisme Béninois depuis 1974");
+		$this->load->view('ancienscomissaires',$variables);
+	}
+	
 	
 }

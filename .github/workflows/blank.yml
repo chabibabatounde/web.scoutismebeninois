@@ -23,7 +23,6 @@ jobs:
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         FTP_DIR: htdocs
       run: |
-        sudo apt-get install -y lftp
         lftp -e "
           open $FTP_SERVER
           user $FTP_USERNAME $FTP_PASSWORD

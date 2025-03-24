@@ -4,7 +4,7 @@ class Article_model extends CI_Model
 {
 	public function last()
 	{
-		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie ORDER BY idArticle DESC LIMIT 6 ', array());
+		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie ORDER BY idArticle DESC LIMIT 9 ', array());
 		return ($query->result_array());
 	}
 	
@@ -29,19 +29,37 @@ class Article_model extends CI_Model
 		$query = $this->db->query('SELECT * FROM Categorie, Article where Categorie.idCategorie = Article.categorie AND Categorie.idCategorie = ? ORDER BY idArticle DESC LIMIT 24 ', array($id));
 		return ($query->result_array());
 	}
-	public function add($post)
+
+
+
+	public function add($post, $name, $fichiers)
 	{
 		$resultat = false;
-		$operation = $this->db->query('INSERT INTO Article VALUES (Null,?,?,?,?,?,NOW())',array(
-			$post['categorie'],
-			$post['titre'],
-			$post['couverture'],
-			$post['contenu'],
-			0
-		));
+		$operation = $this->db->query('INSERT INTO Article VALUES (Null,?,?,?,?,?,?,NOW())',array($post['categorie'],$post['titre'],$name,$post['contenu'],$post['youtube'],0));
 		if($operation)
 		{
 			$resultat = true;
+			foreach ($fichiers as $fichier) {
+				$exten = explode(".", $fichier);
+				$images = ['jpg',"JPG",'png',"PNG","gif","GIF"];
+				$videos = ['mp4',"MP4",'avi',"AVI","3GP","3gp"];
+				$type = "others";
+				if( in_array($exten[count($exten)-1], $images)){
+					$type = "images";
+				}
+				if( in_array($exten[count($exten)-1], $videos)){
+					$type = "videos";
+				}
+				$query = $this->db->query('SELECT * FROM Article ORDER BY idArticle DESC LIMIT 1 ', array());
+				$idArticle = ($query->result_array())[0]['idArticle'];
+
+				$this->db->query('INSERT INTO PieceJointe VALUES (Null,?,?,?)',array(
+					$fichier,
+					$type,
+					$idArticle
+				));
+			}
+
 		}
 		return $resultat;
 	}

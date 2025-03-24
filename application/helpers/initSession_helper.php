@@ -31,17 +31,50 @@ if ( ! function_exists('initSession')){
 	};
 
 
-	
-
 	$reponse['titleLess'] = function ($titre)
 	{
-		$taille = 40;
+		$taille = 60;
 		if (strlen($titre)>$taille) {
-			return substr($titre, 0 , $taille).'...';	
+			return ucfirst(strtolower(substr($titre, 0 , $taille).'...'));	
 		}else{
-			return $titre;
+			return ucfirst(strtolower($titre));
 		}
 	};
+
+	$reponse['urlTitle'] = function ($titre)
+	{	
+		$titre = strtolower($titre);
+		$titre = str_replace(":","",$titre);
+		$titre = str_replace('"',"-",$titre);
+		$titre = str_replace("'","-",$titre);
+		$titre = str_replace("."," ",$titre);
+		$mots = explode(" ", trim($titre));
+		$titre =  "";
+		for ($i=0; $i < sizeof($mots) ; $i++) {
+			$titre .= trim($mots[$i]);
+			if($i < sizeof($mots)-1 ){
+				$titre .='-';
+			}
+		}
+		$enlever=["*",",",";","-","#","€","$","(",")","{","}","+","=","&","/"];
+		for ($i=0; $i < sizeof($enlever) ; $i++) { 
+			$titre =str_replace($enlever[$i],"-",$titre);
+		}
+
+		$replacetable= ["é"=>"e", "€"=>"E", "è"=>"e", "ê"=>"e", "ë"=>"e", "ô"=>"o", "ö"=>"o", "î"=>"i", "ù"=>"u", "â"=>"a", "à"=>"a"];
+
+		foreach ($replacetable as $key => $value) {
+			$titre = str_replace($key, $value, $titre);
+		}
+
+		if($titre[strlen($titre)-1]=="-"){
+
+		}
+
+		return $titre;
+	};
+
+
 
 	$reponse['getAnnee'] = function ($titre)
 	{

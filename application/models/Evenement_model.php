@@ -17,15 +17,16 @@ class Evenement_model extends CI_Model
 		$query = $this->db->query('SELECT * FROM Categorie, Evenement where Categorie.idCategorie = Evenement.categorie ORDER BY idEvenement DESC', array());
 		return ($query->result_array());
 	}
-	public function add($post)
+	public function add($post, $image)
 	{
 		$resultat = false;
+
 		$operation = $this->db->query('INSERT INTO Evenement VALUES (Null,?,?,?,?,?)',array(
 			$post['titre'],
 			$post['dateEvenement'],
 			$post['categorie'],
 			$post['contenu'],
-			$post['couverture']
+			$image
 		));
 		if($operation)
 		{

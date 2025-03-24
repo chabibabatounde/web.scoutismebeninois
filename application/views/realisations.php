@@ -8,7 +8,7 @@
 			<div class="row justify-content-lg-end align-items-center banner-content">
 				<div class="col-lg-5">
 					<h1 class="text-white">Réalisations</h1>
-					<p>Ce que nous avons fais</p>
+					<p>Ce que nous avons fait</p>
 				</div>
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 	                Jadis le document qui faisait en quelque sorte office de programme des jeunes est « Défis et Aventure ». Hélas, c’est une erreur d’appréciation puisqu’il s’agit juste d’un document de progression. La progression étant un élément de la méthode, le tout étant dans pris en compte dans le Programme des jeunes. L’absence de ce document pendant longtemps  a laissé le scoutisme statique si non que nous avons assisté à la baisse des effectifs dans nos unités0. Aujourd’hui plus de souci, le programme des jeunes existe et connait un début de mise en œuvre depuis bientôt deux ans. 
 	          	</div>
 	          	<div class="col-md-6">
-	        		<strong class="item">Les documents de managements </strong>
+	        		<strong class="item">Les documents de management </strong>
 	                Le Scoutisme Béninois a mis au point des outils d'administration et de gouvernance critiques visant à renforcer la gestion de l'organisation.  Avec le soutien technique et financier du Bureau Région Afrique (BRA) à travers le projet MoP un travail initial a été fait par le Scoutisme Béninois, qui a procédé à la validation  des documents au cours d’une Conférence Nationale Extraordinaire en juillet 2015. Au nombre de ces documents on peut retenir :
 	                <br>
 	                - Le document de Politique de Gestion des Ressources Adultes  

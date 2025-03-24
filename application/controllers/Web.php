@@ -34,19 +34,77 @@ class Web extends CI_Controller {
 		$this->load->model('Article_model','Article');
 		$this->load->model('Categorie_model','Categorie');
 		$variables['categories']= $this->Categorie->gets();
-
-		if(isset($_SESSION['ccom'])){	
+		if(true){
 			switch ($page) {
 			case 'index':
 				if(isset($_POST['categorie'])){
-						echo ('Article ajouté!');
-						$this->Article->add($_POST);
-						$variables['articles']= $this->Article->getAll();
-						$this->load->view('admin_article',$variables);
-				}else{
-					$variables['articles']= $this->Article->getAll();
-					$this->load->view('admin_article',$variables);
+					$basename = getcwd().'/assets/img/news/';
+				    $name = date("siHdmYmdHis").".jpg";
+				    $source = $basename.$name;
+				    if(move_uploaded_file($_FILES['coover-input']["tmp_name"], $source)){
+					    $destination = $basename."thumb-".$name;
+					    $quality = 50;
+					    $info = getimagesize($source);
+					    if ($info['mime'] == 'image/jpeg') 
+					        $image = imagecreatefromjpeg($source);
+					    elseif ($info['mime'] == 'image/gif') 
+					        $image = imagecreatefromgif($source);
+					    elseif ($info['mime'] == 'image/png') 
+					        $image = imagecreatefrompng($source);
+					    imagejpeg($image, $destination, $quality);
+
+					    $basename = getcwd().'/assets/piecejointe/';
+					    
+					    $fichiers =[];
+					    for ($i=1; $i < 11; $i++) {
+					    	//POSTMAN
+					    	if(isset($_FILES['file'.($i)])){
+					    		$name = "joined-".$i."-".date("siHdmYmdHis").".jpg";
+							    move_uploaded_file($_FILES['file'.($i)]["tmp_name"], $basename.$name);
+					    		$source = $basename.$name;
+							    $destination = $basename."pj-".$name;
+							    $quality = 50;
+							    $info = getimagesize($source);
+							    if ($info['mime'] == 'image/jpeg') 
+							        $image = imagecreatefromjpeg($source);
+							    elseif ($info['mime'] == 'image/gif') 
+							        $image = imagecreatefromgif($source);
+							    elseif ($info['mime'] == 'image/png') 
+							        $image = imagecreatefrompng($source);
+							    imagejpeg($image, $destination, $quality);
+							    unlink($source);
+					    		$fichiers[] =  "pj-".$name;
+					    	}
+					    	//NORML
+					    	/*
+					    	if(isset($_POST['file'.($i)]) AND $_POST['file'.($i)] != "N" ){
+					    		$name = "joined-".$i."-".date("siHdmYmdHis").".jpg";
+					    		$ifp = fopen($basename.$name, 'wb'); 
+							    $data = explode(',', $_POST['file'.($i)]);
+							    fwrite($ifp, base64_decode($data[1]));
+							    fclose($ifp);
+					    		$source = $basename.$name;
+							    $destination = $basename."pj-".$name;
+							    $quality = 50;
+							    $info = getimagesize($source);
+							    if ($info['mime'] == 'image/jpeg') 
+							        $image = imagecreatefromjpeg($source);
+							    elseif ($info['mime'] == 'image/gif') 
+							        $image = imagecreatefromgif($source);
+							    elseif ($info['mime'] == 'image/png') 
+							        $image = imagecreatefrompng($source);
+							    imagejpeg($image, $destination, $quality);
+							    unlink($source);
+					    		$fichiers[] =  "pj-".$name;
+					    	}
+					    	*/
+					    }
+				    	$this->Article->add($_POST, $name, $fichiers);
+						echo ('Article ajouté!<br>');
+				    }
 				}
+				$variables['articles']= $this->Article->getAll();
+				$this->load->view('admin_article',$variables);
 				break;
 			case 'delete':
 				if($id!=0){
@@ -58,6 +116,7 @@ class Web extends CI_Controller {
 					if(isset($_POST['categorie'])){
 						echo ('Article modifié!');
 						$this->Article->update($_POST,$id);
+
 						$variables['articles']= $this->Article->getAll();
 						$this->load->view('admin_article',$variables);
 					}else{
@@ -90,6 +149,34 @@ class Web extends CI_Controller {
 		}
 	}
 
+	public function bibliotheque($page, $id=0){
+		$variables = initSession("Administration");
+		$this->load->model('Bibliotheque_model','Bibliotheque');
+		$variables['bibliotheques']= $this->Bibliotheque->gets();
+		switch ($page) {
+		case 'index':
+			if(isset($_SESSION['ccom'])){
+				if(isset($_POST['nomDocument'])){
+					$basename = getcwd().'/assets/mediatheque/livre/';
+					$exten = explode(".", $_FILES["fichier"]['name']);
+		    		$name = date("siHdmYmdHis").".".$exten[count($exten)-1];
+				    move_uploaded_file($_FILES['fichier']["tmp_name"], $basename.$name);
+					$liste = $this->Bibliotheque->add($_POST['nomDocument'], $name);
+					$variables['bibliotheques']= $this->Bibliotheque->gets();
+				}
+				$this->load->view("admin_bibliotheque",$variables);
+			}
+			else{
+				$this->load->view('admin',$variables);
+			}
+			break;
+		case 'delete':
+			if($id!=0){
+				$this->Bibliotheque->del($id);
+			}
+			break;
+		}
+	}
 
 	public function evenements($page, $id='0')
 	{
@@ -103,7 +190,24 @@ class Web extends CI_Controller {
 			case 'index':
 				if(isset($_POST['categorie'])){
 						echo ('Evenement ajouté!');
-						$this->Evenement->add($_POST);
+						$basename = getcwd().'/assets/img/event/';
+					    $name = date("siHdmYmdHis").".jpg";
+					    move_uploaded_file($_FILES['couverture']["tmp_name"], $basename.$name);
+
+					    $source = $basename.$name;
+					    $destination = $basename."thumb-".$name;
+					    $quality = 50;
+					    $info = getimagesize($source);
+					    if ($info['mime'] == 'image/jpeg') 
+					        $image = imagecreatefromjpeg($source);
+					    elseif ($info['mime'] == 'image/gif') 
+					        $image = imagecreatefromgif($source);
+					    elseif ($info['mime'] == 'image/png') 
+					        $image = imagecreatefrompng($source);
+					    imagejpeg($image, $destination, $quality);
+
+
+						$this->Evenement->add($_POST, $name);
 						$variables['evenements']= $this->Evenement->getAll();
 						$this->load->view('admin_evenement',$variables);
 				}else{

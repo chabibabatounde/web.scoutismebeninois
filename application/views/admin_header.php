@@ -8,9 +8,9 @@
 	<h3>
 		<a href="<?php echo lien('Web','evenements/index')?>">Evenement</a>
 	</h3>
-	<!--h3>
+	<h3>
 		<a href="<?php echo lien('Web','bibliotheque/index')?>">Bibliothèque</a>
-	</h3-->
+	</h3>
 	<h3>
 		<a href="<?php echo lien('Web','newsletter')?>">Newsletter</a>
 	</h3>
@@ -25,5 +25,5 @@
 		margin:20px;
 	}
 </style>
-
+<script src="https://qinowaticket.com/js/site/sweet.js"></script>
 <br>

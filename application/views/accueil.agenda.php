@@ -5,12 +5,12 @@
 			<div class="row justify-content-center">
 				<div class="col-lg-6">
 					<div class="section-title">
-						<h2><span>Evenements</span> a venir</h2>
+						<h2><span>Evénements scouts</span> </h2>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="row" id='agenda-page'>
 				
 
 				<?php
@@ -21,7 +21,7 @@
 							<div class="row align-items-center">
 								<div class="col-lg-6 col-md-6">
 									<figure>
-										<img class="img-fluid w-100" src="<?php echo img_url('event/'.$evenement['couverture']); ?>" alt="">
+										<img class="img-fluid w-100" src="<?php echo img_url('event/thumb-'.$evenement['couverture']); ?>" alt="">
 									</figure>
 								</div>
 								<div class="col-lg-6 col-md-6">
@@ -43,7 +43,7 @@
 												<h4 class="minutes"><?php echo $getAnnee($evenement['dateEvenement']); ?> </h4>
 											</div>
 										</div>
-										<a href="<?php echo lien("Evenement",'lecture/'.$evenement['idEvenement']); ?>" class="primary-btn2">Détails</a>
+										<a href="<?php echo lien("Evenement",'lecture/'.$evenement['idEvenement']); ?>" class="primary-btn2">Voir les détails</a>
 									</div>
 								</div>
 							</div>

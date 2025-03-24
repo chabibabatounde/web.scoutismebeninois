@@ -45,10 +45,15 @@
 			</p>
 			<div class="section-top-bordser">
 				<div class="row gallery-item">
+					<div class="col-md-1"></div>
+
 					<div class="col-md-4">
 						<div class="single-gallery-image" style="background: url(<?php echo img_url('elements/g2.jpg') ?>);"></div>
 					</div>
-					<div class="col-md-8">
+
+					<div class="col-md-2"></div>
+
+					<div class="col-md-4">
 						<div class="single-gallery-image" style="background: url(<?php echo img_url('elements/g6.jpg') ?>);"></div>
 					</div>
 

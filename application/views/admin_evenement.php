@@ -3,7 +3,7 @@
 ?>
 
 <center>
-	<form action="<?php echo lien('Web','evenements/index')?>" method="POST">
+	<form action="<?php echo lien('Web','evenements/index')?>" method="POST" enctype="multipart/form-data">
 		<select required="" name="categorie" class="selection" >
 			<option value=""> -- Catégorie -- </option>
 			<?php
@@ -14,8 +14,11 @@
 		</select>
 		<input required="" placeholder="Titre de l'evenement" class="selection" type="date" name="dateEvenement">
 		<input required="" placeholder="Titre de l'evenement" class="selection" type="text" name="titre">
+		<br>
+		<br>
+		<input required="" class="selection" type="file" name="couverture"> <br><br>
+
 		<textarea required="" name="contenu" class="selection" placeholder="Saisissez le contenu" rows="5"></textarea>
-		<input required="" class="selection" type="text" name="couverture">
 		<input class="selection" type="submit" value ="publier">
 	</form>
 </center>

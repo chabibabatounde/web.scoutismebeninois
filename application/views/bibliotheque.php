@@ -28,7 +28,7 @@
 							foreach ($livres as $livre) {
 						?>
 							<div title="<?php echo $livre['nomDocument']; ?>" class="table-row" style="padding-left: 20px;">
-								<a href="<?php echo biblio_url($livre['fichier']) ?>">
+								<a href="<?php echo biblio_url($livre['fichier']) ?>" download="<?php echo($livre['fichier']) ?>">
 									<?php echo $livre['nomDocument']; ?>
 									<span style="display: block; color: black;">
 										Mise à jour le 

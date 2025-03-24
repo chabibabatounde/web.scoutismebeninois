@@ -7,8 +7,10 @@
 		<div class="container">
 			<div class="row justify-content-lg-end align-items-center banner-content">
 				<div class="col-lg-5">
-					<h1 class="text-white">Bureau national</h1>
-					<p>Le commissaire général et son bureau</p>
+					<h1 class="text-white">Commissariat Général</h1>
+					<p>
+						
+					</p>
 				</div>
 			</div>
 		</div>
@@ -16,128 +18,104 @@
 
 	<section class="blog_area single-post-area section-gap">
 	    <div class="container">
-			<h3 class="text-heading"> Bureau national</h3>
+			<h3 class="text-heading"> Commissariat Général</h3>
 	      	<div class="row">
-	      	Le Commissariat Général est l’organe exécutif de l’Association. Le Commissaire Général en est le premier responsable. Il est élu pour un mandat de trois ans renouvelable une (1) fois. Le Commissariat Général est composé de onze (11) membres proposés par le Commissaire Général et appréciés par la Conférence Nationale si elle est en session ou par le Conseil National entre deux (02) sessions de celle-ci. Il est soutenu dans ses actions par des commissions techniques animées par les membres du Commissariat Général à l’exception du Commissaire Général. C’est Joachim DOMANOU qui est l’actuel Commissaire Général. Il est élu en septembre 2015 pour un mandat de trois ans. Il est cadre du Ministère de la Décentralisation et de la Gouvernance Locale du Bénin.
+	      		Le Commissariat Général est l'organe exécutif de l’Association, il est dirigé par le Commissaire Général élu en Conférence Nationale pour un mandat de trois ans renouvelable une (1) fois. Le Commissariat Général est composé de onze (11) membres proposés par le Commissaire Général et appréciés par la Conférence Nationale si elle est en session ou par le Conseil National entre deux (02) sessions de la Conférence Nationale. Il est soutenu dans ses actions par des commissions techniques animées par les membres du Commissariat Général à l’exception du Commissaire Général.
+	      		<br>
+	      		<br>
 
-	      	<div class="col-lg-12 posts-list">
+				Madame Evelyne OUENSAVI est l’actuelle Commissaire Générale du Scoutisme Béninois. Elle a été élue élue en octobre 2021 pour un mandat de trois ans. Formatrice titulaire des quatre buchettes, elle est Professeur certifiée de Lettres à la retraite, Conseillère Pédagogique, actuelle Directrice du Collège Michel Dubois de Pahou dans le département de l'Atlantique. Elle a également à son actif un Master en Science du Mariage et de la Famille.
+
+	      	<div class="col-lg-6 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/cg.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/cg.jpg') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Joachim DOMANOU</h4>
-		                <p>Commissaire Général
-		              	</p>
+		                <h4>Evelyne OUENSAVI</h4>
+		                <p>Commissaire Générale</p>
 		              </div>
 		            </div>
 	            </div>
 	        </div>
-
-	        <div class="col-lg-4 posts-list">
+	        <div class="col-lg-6 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Evelyne OUINSAVI.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Evelyne OUINSAVI</h4>
-		                <p>
-		                	Commissaire Général Adjointe chargé de l'administration
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div>
-	        <div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Sylvie DOSSOU-TOGBE.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Sylvie DOSSOU-TOGBE</h4>
-		                <p>Commissaire Internationale
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div><div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Michel DJEIGO.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/cga.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Michel DJEIGO</h4>
-		                <p>Commissaire National chargé du Programme de Jeunes
-		              	</p>
+		                <p>Commissaire Général Adjoint chargé de l’Administration</p>
 		              </div>
 		            </div>
 	            </div>
-	        </div><div class="col-lg-4 posts-list">
+	        </div>
+
+	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/François LOKOSSOU.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/lokossou.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>François LOKOSSOU</h4>
-		                <p>
-		                	Commissaire National chargé des Ressources Adultes
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div><div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Aurèle NOUKPO.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Aurele NOUKPO</h4>
-		                <p>
-		                	Commissaire Nationale chargée de la promotion du genre
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div><div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Ambroise MEDJA.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Ambroise MEDJA</h4>
-		                <p>
-		                	Commissaire National chargé de la Communication et du Marketing
-		              	</p>
+		                <p>Commissaire National chargé des Ressources Adultes</p>
 		              </div>
 		            </div>
 	            </div>
 	        </div>
+
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Bruno ADJASSA.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ibikounle.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>Jean Paul IBIKOUNLE</h4>
+		                <p>Commissaire National chargé du Programme des Jeunes </p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ROMARIC.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>Romaric AZANCHEME </h4>
+		                <p>Commissaire National chargé des Finances et du Patrimoine</p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/lohento.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>Jean-Roland LOHENTO</h4>
+		                <p>Commissaire National chargé de la Communication et du Marketing </p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/SYLVIE PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>Sylvie DOSSOU-TOGBE GNAGO-NI</h4>
+		                <p>Commissaire Internationale</p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/BRUNO PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Bruno ADJASSA</h4>
-		                <p>
-		                	Commissaire National chargé des Finances
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div><div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Christiane DOHOU.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Christiane DOHOU</h4>
-		                <p>
-		                	Commissaire National Adjoint chargé des Finances
-		              	</p>
-		              </div>
-		            </div>
-	            </div>
-	        </div><div class="col-lg-4 posts-list">
-				<div class="blog-author">
-		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Maximilien YEOU.png') ?>" alt="">
-		              <div class="media-body">
-		                <h4>Maximilien YEOU</h4>
-		                <p>
-		                	Commissaire National chargé des Relations avec les Confessions Religieuses
-		              	</p>
+		                <p>Commissaire National chargé du Développement Communautaire et de l’Auto-emploi des Jeunes</p>
 		              </div>
 		            </div>
 	            </div>
@@ -145,20 +123,37 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img src="<?php echo img_url('BN/Fernand AKOUEDENOUDJE.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/AURELLE PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Fernand AKOUEDENOUDJE</h4>
-		                <p>
-		                	Commissaire National chargé du Développement Communautaire et de l'Auto-emploi des Jeunes
-		              	</p>
+		                <h4>Aurèle NOUKPO MICHIAFFO</h4>
+		                <p>Commissaire Nationale chargée de la promotion du genre </p>
 		              </div>
 		            </div>
 	            </div>
 	        </div>
-
-
-
-
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ODOUNLAMI PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>ODOUNLAMI Marcelin</h4>
+		                <p>Commissaire National chargé de la Spiritualité </p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+	        <div class="col-lg-4 posts-list">
+				<div class="blog-author">
+		            <div class="media align-items-center">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ADJOINT FINANCIER PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <div class="media-body">
+		                <h4>Hereban IBRAHIM</h4>
+		                <p>Commissaire National Adjoint chargé des Finances et  du Patrimoine</p>
+		              </div>
+		            </div>
+	            </div>
+	        </div>
+	        
 	    </div>
 	</section>
 

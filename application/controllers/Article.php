@@ -6,13 +6,26 @@ class Article extends CI_Controller {
 	{
 		$variables = initSession("");
 		$this->load->model('Article_model','Article');
-		$id = base_convert($id, 14,10);
-		$this->Article->lecture($id)[0];
+		//$id = base_convert($id, 14,10);
+		$this->Article->lecture($id);
 		$variables['article']=$this->Article->get($id)[0];
 		$variables['titrePage']=$variables['article']['titre'];
+		$this->load->model('PieceJointe_model','PieceJointe');
+		$variables['pieceJointes']=$this->PieceJointe->getFiles($id);
 		$this->load->view('article',$variables);
+	}
 
-
+	public function r($id, $titre)
+	{
+		$variables = initSession("");
+		$this->load->model('Article_model','Article');
+		//$id = base_convert($id, 14,10);
+		$this->Article->lecture($id);
+		$variables['article']=$this->Article->get($id)[0];
+		$variables['titrePage']=$variables['article']['titre'];
+		$this->load->model('PieceJointe_model','PieceJointe');
+		$variables['pieceJointes']=$this->PieceJointe->getFiles($id);
+		$this->load->view('article',$variables);
 	}
 
 	public function index()
@@ -35,6 +48,5 @@ class Article extends CI_Controller {
 		$this->load->view('blogs',$variables);
 	}
 
-	
 	
 }

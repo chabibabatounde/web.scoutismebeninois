@@ -1,10 +1,13 @@
 <?php
-class APropos extends CI_Controller {
+class Apropos extends CI_Controller {
 
 
 	public function historique()
 	{
 		$variables = initSession("Historique du Scoutisme");
+
+		$variables['sessionImage'] =  img_url("common-banner (4).jpg");
+		
 		$this->load->view('historique',$variables);
 	}
 	public function produitsEtServices()

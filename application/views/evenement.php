@@ -26,12 +26,10 @@
 								<?php echo $getDate($evenement['dateEvenement']); ?>
 								<?php echo $getMois($evenement['dateEvenement']); ?>
 								<?php echo $getAnnee($evenement['dateEvenement']); ?> 
-								 à
-								<?php echo $getHeure($evenement['dateEvenement']); ?>
 
 							</a></li>
 							</ul>
-							<p class="excert">
+							<p class="excert" style="text-align: justify;">
 								<?php echo $evenement['contenu']?>
 							</p>
 			            </div>
@@ -42,14 +40,14 @@
 			            <div class="feature-img">
 			              <img class="img-fluid" src="<?php echo img_url('event/'.$evenement['couverture']); ?>" alt="">
 			            </div>
-			            <div class="blog_details">
+			            <!--div class="blog_details">
 			            	<h3>Partager avec vos proches</h3>
 			            	<ul class="blog-info-link mt-3 mb-4">
 				                <li><a href="#"><i class="fa fa-whatsapp"></i> Whatsapp</a></li>
 				                <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
 				                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
 			              	</ul>
-			        	</div>
+			        	</div-->
 			        </div>
 			    </div>
 			</div>

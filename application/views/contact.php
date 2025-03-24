@@ -65,7 +65,7 @@
           <div class="media contact-info">
             <span class="contact-info__icon"><i class="fa fa-phone"></i></span>
             <div class="media-body">
-              <h3><a href="tel:96089066">(+ 229) 96 08 90 66 / 96 01 04 92</a></h3>
+              <h3><a href="tel:96089066">(+ 229) 01 62 16 86 01 / 01 97 04 21 10</a></h3>
               <p>Lundi au Vendredi de 9h à 18h</p>
             </div>
           </div>
@@ -73,7 +73,7 @@
             <span class="contact-info__icon"><i class="fa fa-envelope-o"></i></span>
             <div class="media-body">
               <h3><a href="mailto:info@scoutismebeninois.org">info@scoutismebeninois.org</a></h3>
-              <p>Ecrivez vous à tout moment!</p>
+              <p>Ecrivez nous à tout moment!</p>
             </div>
           </div>
         </div>

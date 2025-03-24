@@ -2,7 +2,7 @@
 	require 'header.php';
 	?>
 	<!-- Start top-section Area -->
-	<section class="banner-area relative">
+	<section class="banner-area relative" style="backgrounds:url('<?php echo $sessionImage?>');">
 		<div class="overlay overlay-bg"></div>
 		<div class="container">
 			<div class="row justify-content-lg-end align-items-center banner-content">

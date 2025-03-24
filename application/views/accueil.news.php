@@ -20,7 +20,7 @@
 							<div class="card single-popular-cause">
 								<div class="card-body">
 									<figure>
-										<img class="card-img-top img-fluid" src="<?php echo img_url('news/'.$nouvelle['couverture']); ?>" alt="Card image cap">
+											<img class="card-img-top img-fluid" src="<?php echo img_url('news/thumb-'.$nouvelle['couverture']); ?>" alt="Card image cap">
 									</figure>
 									<div class="card_inner_body">
 										<div class="tag"><?php echo $nouvelle['nomCategorie'] ?></div>
@@ -30,8 +30,7 @@
 											<p></p>
 										</div>
 										<div class="d-flex justify-content-between donation align-items-center">
-											<a href="<?php echo lien('Article','lecture/'.base_convert($nouvelle['idArticle'], 10,14)) ?>" class="primary-btn">Lire l'article</a>
-
+											<a href="<?php echo lien('Article','r/'.$nouvelle['idArticle']."/".$urlTitle($nouvelle['titre'])) ?>" class="primary-btn">Lire l'article</a>
 											<p><span class="ti-eye mr-1"></span><?php echo $nouvelle['nmbreLu'] ?>  Fois</p>
 										</div>
 									</div>
@@ -52,8 +51,8 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-8">
-					<div class="call-wrap mx-auto">
-						<h1>Voulez-vous voir plus d'actualité?</h1>
+					<div class="call-wrap mx-auto" >
+						<h1>Voulez-vous avoir plus d'actualités?</h1>
 						<a href="#newslettersection">
 							<p class="top_text">Cliquez ici pour vous abonner à notre newsletter </p>
 						</a>
@@ -64,4 +63,5 @@
 			</div>
 		</div>
 	</section>
+	<div id='agenda-page'></div>
 	<!--================ End callto Area =================-->
