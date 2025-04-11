@@ -98,11 +98,15 @@
 							</a>
 							<div class="dropdown-menu">
 
-							<a class="dropdown-item" href="<?php echo lien('Organisation','comiteNational'); ?>"> Comité National</a>
+							<!--a class="dropdown-item" href="<?php echo lien('Organisation','comiteNational'); ?>"> Comité National</a-->
 
 							<a class="dropdown-item" href="<?php echo lien('Organisation','bureauNational'); ?>"> Commissariat Général</a>
 							
+
 							<a class="dropdown-item" href="<?php echo lien('Organisation','directionExecutive'); ?>">Direction Exécutive</a>
+
+							<a class="dropdown-item" href="<?php echo lien('Organisation','comiteNational'); ?>"> Comité National</a>
+
 
 							<a class="dropdown-item" href="<?php echo lien('Organisation','verificateurs'); ?>"> Vérificateurs de Comptes </a>
 

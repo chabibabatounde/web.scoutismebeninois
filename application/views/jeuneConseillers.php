@@ -25,26 +25,28 @@
 
 					Le Forum National des Jeunes est une école d’apprentissage à la prise des responsabilités. Sont concernés par ce forum, les jeunes de la tranche d’âge de 18 à 26 ans n’ayant pas occupé une fois de responsabilité au niveau d’un organe du Scoutisme Béninois.<br>
 
-					Mademoiselle Asta DJOSSOU, Etudiante en Droit, est l'actuelle Présidente du Comité National des Jeunes du Scoutisme Béninois. Elle a été élue au Forum National des Jeunes en octobre 2021.<br>
+					<br>
 			      		
 					Le comité se présente comme suit :
 					<div style=" padding-left:10px;">
-						<strong>Présidente : </strong>  Asta DJOSSOU <br>
-						<strong>Secrétaire : </strong>  Petter Kévin KOUAGOU <br>
+						<strong>Présidente : </strong> Apollinaire AKELELE <br>
+						<strong>Secrétaire : </strong> Alban AKPO <br>
 						<strong>Membres : </strong><br>
-						- Sergino ALOUKPÉ <br>
-						- Pierre Claver KPOGLA <br>
-						- Roger TCHOBI <br>
-						- Géraldo A. DJOGOUN<br><br>
+						- S. Miracle GOSSOU <br>
+						- Constant SEGBEGNON  <br>
+						- Agnès ALOFAN <br>
+						- Grégoire DJASSOU Grégoire<br><br>
 					</div>
 				</p>				
 			</div>
-			<center>
+			<!--center>
 				<img  style="border-radius: 0px; width:80%;" src="<?php echo img_url('organisation/forum/forum.jpg') ?>" alt=""><br>
 				Le Comité Nationaldes Jeunes Conseillers
-			</center>
+			</center-->
 		</div>
 	</section>
 	<?php
 	require 'footer.php';
 	?>
+
+

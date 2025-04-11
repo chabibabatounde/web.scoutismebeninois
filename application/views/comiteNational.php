@@ -26,33 +26,33 @@
 					Le Comité National est composé de six (06) membres élus, en plus du Commissaire Général. Les membres élus du Comité National ont un mandat de trois (3) ans renouvelable
 					une fois. Le renouvellement se fait de moitié, soit trois (03) de ses membres. Après leur élection, les membres du Comité National constituent en conclave le bureau.
 	      			<br>
-					L'actuel Comité National du Scoutisme Béninois est dirigé par le Président Ilarion KINGNON, journaliste, Patron de presse, Consultant en Communication.
+					L'actuel Comité National du Scoutisme Béninois est dirigé par le Président Expédit BOSSA.
 	      			
 	      		</p>
 		      	<p>
 		      		<div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/ILARION PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+								<img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/EXPEDIT PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Ilarion KINGNON</h4>
+				                <h4>Expédit BOSSA</h4>
 				                <p>Président</p>
 				              </div>
 				            </div>
 			            </div>
 			        </div>
 
-			        <!--div class="col-lg-6 posts-list">
+			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/EPIPHANE AGBOGOURIN PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Epiphane ABOGOURIN </h4>
+				                <h4>André GNONLONFOUN </h4>
 				                <p>Vice-Président </p>
 				              </div>
 				            </div>
 			            </div>
-			        </div-->
+			        </div>
 
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
@@ -69,10 +69,10 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/Hylarion YOROU.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Hylarion YOROU  </h4>
-				                <p>Conseiller aux Finances  </p>
+				                <h4>Joy KPADONOU</h4>
+				                <p>Conseillère aux Finances  </p>
 				              </div>
 				            </div>
 			            </div>
@@ -81,9 +81,10 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/EXPEDIT PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+
 				              <div class="media-body">
-				                <h4>Expédit BOSSA </h4>
+				                <h4>Dieudonné AGBEDJALOU</h4>
 				                <p>Conseiller aux Ressources Adultes</p>
 				              </div>
 				            </div>
@@ -105,10 +106,10 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/PAULETTE  PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/comite/EPIPHANE AGBOGOURIN PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Paulette SONINHEKPON</h4>
-				                <p>Conseillère à la Communication </p>
+				                <h4>Epiphane ABOGOURIN</h4>
+				                <p>Conseiller à la Communication </p>
 				              </div>
 				            </div>
 			            </div>

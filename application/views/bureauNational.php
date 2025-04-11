@@ -24,7 +24,7 @@
 	      		<br>
 	      		<br>
 
-				Madame Evelyne OUENSAVI est l’actuelle Commissaire Générale du Scoutisme Béninois. Elle a été élue élue en octobre 2021 pour un mandat de trois ans. Formatrice titulaire des quatre buchettes, elle est Professeur certifiée de Lettres à la retraite, Conseillère Pédagogique, actuelle Directrice du Collège Michel Dubois de Pahou dans le département de l'Atlantique. Elle a également à son actif un Master en Science du Mariage et de la Famille.
+				Madame Evelyne OUENSAVI est l’actuelle Commissaire Générale du Scoutisme Béninois. Elle a été élue en 2025 pour un mandat de trois ans. Formatrice titulaire des quatre buchettes, elle est Professeur certifiée de Lettres à la retraite, Conseillère Pédagogique, actuelle Directrice du Collège Michel Dubois de Pahou dans le département de l'Atlantique. Elle a également à son actif un Master en Science du Mariage et de la Famille.
 
 	      	<div class="col-lg-6 posts-list">
 				<div class="blog-author">
@@ -40,9 +40,9 @@
 	        <div class="col-lg-6 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/cga.jpg') ?>" alt="">
+					<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Michel DJEIGO</h4>
+		                <h4>Ambroise MEDJA</h4>
 		                <p>Commissaire Général Adjoint chargé de l’Administration</p>
 		              </div>
 		            </div>
@@ -64,9 +64,9 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ibikounle.jpg') ?>" alt="">
+					<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Jean Paul IBIKOUNLE</h4>
+		                <h4>Epiphane ODUNLAMI</h4>
 		                <p>Commissaire National chargé du Programme des Jeunes </p>
 		              </div>
 		            </div>
@@ -100,9 +100,9 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/SYLVIE PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+					<img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/mono_csr.jpg') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Sylvie DOSSOU-TOGBE GNAGO-NI</h4>
+		                <h4>Bruno DANSI</h4>
 		                <p>Commissaire Internationale</p>
 		              </div>
 		            </div>
@@ -112,9 +112,9 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/BRUNO PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Bruno ADJASSA</h4>
+		                <h4>Gad Abel DIDEH</h4>
 		                <p>Commissaire National chargé du Développement Communautaire et de l’Auto-emploi des Jeunes</p>
 		              </div>
 		            </div>
@@ -123,9 +123,9 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/AURELLE PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Aurèle NOUKPO MICHIAFFO</h4>
+		                <h4>Brigitte GBAGUIDI</h4>
 		                <p>Commissaire Nationale chargée de la promotion du genre </p>
 		              </div>
 		            </div>
@@ -136,7 +136,7 @@
 		            <div class="media align-items-center">
 		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ODOUNLAMI PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
 		              <div class="media-body">
-		                <h4>ODOUNLAMI Marcelin</h4>
+		                <h4>Marcelin ODOUNLAMI </h4>
 		                <p>Commissaire National chargé de la Spiritualité </p>
 		              </div>
 		            </div>
@@ -145,9 +145,9 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ADJOINT FINANCIER PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+					<img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/yessoufa.jpg') ?>" alt="">
 		              <div class="media-body">
-		                <h4>Hereban IBRAHIM</h4>
+		                <h4>Yessoufa BIO YAROU</h4>
 		                <p>Commissaire National Adjoint chargé des Finances et  du Patrimoine</p>
 		              </div>
 		            </div>

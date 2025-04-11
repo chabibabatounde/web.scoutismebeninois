@@ -23,10 +23,10 @@
 		      		<div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/verificateur/JULIA PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Julia O. BODJRENOU</h4>
-				                <p>Vérificatrice de Comptes</p>
+				                <h4>Abel DANNON</h4>
+				                <p>Vérificateur de Comptes</p>
 				              </div>
 				            </div>
 			            </div>
@@ -34,10 +34,10 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-				              <img style="border-radius: 0px" src="<?php echo img_url('organisation/verificateur/CHRISTIANE PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
 				              <div class="media-body">
-				                <h4>Christiane DOHOU</h4>
-				                <p>Vérificatrice de Comptes</p>
+				                <h4>Amen Liboire MICHIAFFO</h4>
+				                <p>Vérificateur de Comptes</p>
 				              </div>
 				            </div>
 			            </div>
