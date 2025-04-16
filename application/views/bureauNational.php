@@ -40,7 +40,7 @@
 	        <div class="col-lg-6 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-					<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+					<img style="border-radius: 0px" src="<?php echo img_url('teams/1.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Ambroise MEDJA</h4>
 		                <p>Commissaire Général Adjoint chargé de l’Administration</p>
@@ -64,7 +64,7 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-					<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+					<img style="border-radius: 0px" src="<?php echo img_url('teams/3.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Epiphane ODUNLAMI</h4>
 		                <p>Commissaire National chargé du Programme des Jeunes </p>
@@ -88,7 +88,7 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/lohento.jpg') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('teams/8.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Jean-Roland LOHENTO</h4>
 		                <p>Commissaire National chargé de la Communication et du Marketing </p>
@@ -100,7 +100,7 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-					<img  style="border-radius: 0px" src="<?php echo img_url('organisation/region/mono_csr.jpg') ?>" alt="">
+					<img  style="border-radius: 0px" src="<?php echo img_url('teams/9.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Bruno DANSI</h4>
 		                <p>Commissaire Internationale</p>
@@ -112,7 +112,7 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('teams/10.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Gad Abel DIDEH</h4>
 		                <p>Commissaire National chargé du Développement Communautaire et de l’Auto-emploi des Jeunes</p>
@@ -134,7 +134,7 @@
 	        <div class="col-lg-4 posts-list">
 				<div class="blog-author">
 		            <div class="media align-items-center">
-		              <img style="border-radius: 0px" src="<?php echo img_url('organisation/commissariat/ODOUNLAMI PHOTO RESPONSABLES SCOUTS.jpg') ?>" alt="">
+		              <img style="border-radius: 0px" src="<?php echo img_url('teams/7.jpg') ?>" alt="">
 		              <div class="media-body">
 		                <h4>Marcelin ODOUNLAMI </h4>
 		                <p>Commissaire National chargé de la Spiritualité </p>
