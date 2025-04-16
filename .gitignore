@@ -1,3 +1,2 @@
-assets/*
 application/config/database.php
 application/helpers/assets_helper.php
