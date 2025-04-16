@@ -40,8 +40,8 @@ if ( ! function_exists('urlDeBase')){
 	function urlDeBase(){
 		//return 'http://13.48.58.6:2026/';
 		//return "http://localhost/scoutismebeninoisV3/";
-		//return base_url();
-		return "https://scoutismebeninois.org/";
+		return base_url();
+		//return "https://scoutismebeninois.org/";
 	}
 }
 
