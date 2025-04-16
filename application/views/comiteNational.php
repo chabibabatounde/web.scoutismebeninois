@@ -69,8 +69,8 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
-				              <div class="media-body">
+							<img style="border-radius: 0px" src="<?php echo img_url('teams/4.jpg') ?>" alt="">
+							<div class="media-body">
 				                <h4>Joy KPADONOU</h4>
 				                <p>Conseillère aux Finances  </p>
 				              </div>
@@ -81,7 +81,7 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('teams/2.jpg') ?>" alt="">
 
 				              <div class="media-body">
 				                <h4>Dieudonné AGBEDJALOU</h4>

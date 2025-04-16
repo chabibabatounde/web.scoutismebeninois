@@ -23,8 +23,8 @@
 		      		<div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
-				              <div class="media-body">
+							<img style="border-radius: 0px" src="<?php echo img_url('teams/6.jpg') ?>" alt="">
+							<div class="media-body">
 				                <h4>Abel DANNON</h4>
 				                <p>Vérificateur de Comptes</p>
 				              </div>
@@ -34,7 +34,7 @@
 			        <div class="col-lg-6 posts-list">
 						<div class="blog-author">
 				            <div class="media align-items-center">
-							<img style="border-radius: 0px" src="<?php echo img_url('organisation/default.png') ?>" alt="">
+							<img style="border-radius: 0px" src="<?php echo img_url('teams/5.jpg') ?>" alt="">
 				              <div class="media-body">
 				                <h4>Amen Liboire MICHIAFFO</h4>
 				                <p>Vérificateur de Comptes</p>
