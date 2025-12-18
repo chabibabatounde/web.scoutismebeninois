@@ -97,66 +97,45 @@
 	var file8 = "N";
 	var file9 = "N";
 	var file10 = "N";
-
+	
     document.querySelector("#coover-img").src = "<?php echo img_url('event/e2.jpg'); ?>"
-
 	$("#coover-input").change(function(){
         readURL(this);
     });
 
     function fichierjoint(id, input){
-    	const fileInput = document.getElementById("piecejointe"+id);
-    	const files = fileInput.files;
-	    if (files.length > 0) {
-	        const file = files[0];
-	        const blob = new Blob([file], { type: file.type });
-	        const reader = new FileReader();
-	        reader.onload = function(e) {
-	            const content = e.target.result;
-	        	if (id == 1) {
-		        	file1 = content;
-		        }
-		        if (id == 2) {
-		        	file2 = content;
-		        }
-		        if (id == 3) {
-		        	file3 = content;
-		        }
-		        if (id == 4) {
-		        	file4 = content;
-		        }
-		        if (id == 5) {
-		        	file5 = content;
-		        }
-		        if (id == 6) {
-		        	file6 = content;
-		        }
-		        if (id == 7) {
-		        	file7 = content;
-		        }
-		        if (id == 8) {
-		        	file8 = content;
-		        }
-		        if (id == 9) {
-		        	file9 = content;
-		        }
-		        if (id == 10) {
-		        	file10 = content;
-		        }
-	        };
-	        reader.onerror = function(e) {
-	            console.error('Erreur lors de la lecture du fichier:', e);
-	        };
-	        reader.readAsText(blob);
-	    } else {
-	        console.log('Aucun fichier sélectionné.');
-	    }
+		let content = input.files[0]
+		if (id == 1) {
+			file1 = content;
+		}
+		if (id == 2) {
+			file2 = content;
+		}
+		if (id == 3) {
+			file3 = content;
+		}
+		if (id == 4) {
+			file4 = content;
+		}
+		if (id == 5) {
+			file5 = content;
+		}
+		if (id == 6) {
+			file6 = content;
+		}
+		if (id == 7) {
+			file7 = content;
+		}
+		if (id == 8) {
+			file8 = content;
+		}
+		if (id == 9) {
+			file9 = content;
+		}
+		if (id == 10) {
+			file10 = content;
+		}
 	}
-
-
-
-
-
 	function deleteFn(argument) {
 		if(confirm("Voulez vous vraiment supprimer l'article?")){
 		  	var xhr = new XMLHttpRequest();

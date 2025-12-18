@@ -30,8 +30,6 @@ class Article_model extends CI_Model
 		return ($query->result_array());
 	}
 
-
-
 	public function add($post, $name, $fichiers)
 	{
 		$resultat = false;
@@ -52,17 +50,16 @@ class Article_model extends CI_Model
 				}
 				$query = $this->db->query('SELECT * FROM Article ORDER BY idArticle DESC LIMIT 1 ', array());
 				$idArticle = ($query->result_array())[0]['idArticle'];
-
 				$this->db->query('INSERT INTO PieceJointe VALUES (Null,?,?,?)',array(
 					$fichier,
 					$type,
 					$idArticle
 				));
 			}
-
 		}
 		return $resultat;
 	}
+
 	public function del($id)
 	{
 		$resultat = false;

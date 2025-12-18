@@ -25,6 +25,30 @@ function GenerationCle($Texte,$CleDEncryptage)
   }
 }
 
+
+if ( ! function_exists('compressImg')){
+  function compressImg($input, $output)
+  {
+  $api_key = "f5q6jRD3f4Jh1Vv79WwtpDwvVSw6BZg0";
+  $request = curl_init();
+  curl_setopt_array($request, array(
+      CURLOPT_URL => "https://api.tinify.com/shrink",
+      CURLOPT_USERPWD => "api:" . $api_key,
+      CURLOPT_POSTFIELDS => file_get_contents($input),
+      CURLOPT_BINARYTRANSFER => true,
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_HTTPHEADER => array("Content-Type: application/octet-stream")
+  ));
+
+  $response = curl_exec($request);
+  $response_data = json_decode($response, true);
+
+  $compressed_url = $response_data["output"]["url"];
+  file_put_contents($output, file_get_contents($compressed_url));
+  }
+}
+
+
 if ( ! function_exists('crypter')){
  function crypter($Texte){
 

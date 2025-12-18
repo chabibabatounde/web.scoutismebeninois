@@ -1,5 +1,28 @@
 <?php
+
+
 class Web extends CI_Controller {
+	public function compressImg($input, $output, $q)
+  {
+  $api_key = "f5q6jRD3f4Jh1Vv79WwtpDwvVSw6BZg0";
+  $request = curl_init();
+  curl_setopt_array($request, array(
+      CURLOPT_URL => "https://api.tinify.com/shrink",
+      CURLOPT_USERPWD => "api:" . $api_key,
+      CURLOPT_POSTFIELDS => file_get_contents($input),
+      CURLOPT_BINARYTRANSFER => true,
+      CURLOPT_RETURNTRANSFER => true,
+      CURLOPT_HTTPHEADER => array("Content-Type: application/octet-stream")
+  ));
+
+  $response = curl_exec($request);
+  $response_data = json_decode($response, true);
+
+  $compressed_url = $response_data["output"]["url"];
+  file_put_contents($output, file_get_contents($compressed_url));
+  }
+
+
 	public function login()
 	{
 		$variables = initSession("Administration");
@@ -44,60 +67,20 @@ class Web extends CI_Controller {
 				    if(move_uploaded_file($_FILES['coover-input']["tmp_name"], $source)){
 					    $destination = $basename."thumb-".$name;
 					    $quality = 50;
-					    $info = getimagesize($source);
-					    if ($info['mime'] == 'image/jpeg') 
-					        $image = imagecreatefromjpeg($source);
-					    elseif ($info['mime'] == 'image/gif') 
-					        $image = imagecreatefromgif($source);
-					    elseif ($info['mime'] == 'image/png') 
-					        $image = imagecreatefrompng($source);
-					    imagejpeg($image, $destination, $quality);
-
+					    $this->compressImg($source, $destination, $quality);
 					    $basename = getcwd().'/assets/piecejointe/';
-					    
 					    $fichiers =[];
 					    for ($i=1; $i < 11; $i++) {
-					    	//POSTMAN
 					    	if(isset($_FILES['file'.($i)])){
 					    		$name = "joined-".$i."-".date("siHdmYmdHis").".jpg";
 							    move_uploaded_file($_FILES['file'.($i)]["tmp_name"], $basename.$name);
 					    		$source = $basename.$name;
 							    $destination = $basename."pj-".$name;
 							    $quality = 50;
-							    $info = getimagesize($source);
-							    if ($info['mime'] == 'image/jpeg') 
-							        $image = imagecreatefromjpeg($source);
-							    elseif ($info['mime'] == 'image/gif') 
-							        $image = imagecreatefromgif($source);
-							    elseif ($info['mime'] == 'image/png') 
-							        $image = imagecreatefrompng($source);
-							    imagejpeg($image, $destination, $quality);
+							    $this->compressImg($source, $destination, $quality);
 							    unlink($source);
 					    		$fichiers[] =  "pj-".$name;
 					    	}
-					    	//NORML
-					    	/*
-					    	if(isset($_POST['file'.($i)]) AND $_POST['file'.($i)] != "N" ){
-					    		$name = "joined-".$i."-".date("siHdmYmdHis").".jpg";
-					    		$ifp = fopen($basename.$name, 'wb'); 
-							    $data = explode(',', $_POST['file'.($i)]);
-							    fwrite($ifp, base64_decode($data[1]));
-							    fclose($ifp);
-					    		$source = $basename.$name;
-							    $destination = $basename."pj-".$name;
-							    $quality = 50;
-							    $info = getimagesize($source);
-							    if ($info['mime'] == 'image/jpeg') 
-							        $image = imagecreatefromjpeg($source);
-							    elseif ($info['mime'] == 'image/gif') 
-							        $image = imagecreatefromgif($source);
-							    elseif ($info['mime'] == 'image/png') 
-							        $image = imagecreatefrompng($source);
-							    imagejpeg($image, $destination, $quality);
-							    unlink($source);
-					    		$fichiers[] =  "pj-".$name;
-					    	}
-					    	*/
 					    }
 				    	$this->Article->add($_POST, $name, $fichiers);
 						echo ('Article ajouté!<br>');
@@ -204,7 +187,7 @@ class Web extends CI_Controller {
 					        $image = imagecreatefromgif($source);
 					    elseif ($info['mime'] == 'image/png') 
 					        $image = imagecreatefrompng($source);
-					    imagejpeg($image, $destination, $quality);
+					    compressImg($image, $destination, $quality);
 
 
 						$this->Evenement->add($_POST, $name);
