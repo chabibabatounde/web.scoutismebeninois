@@ -1,5 +1,4 @@
 name: Deploy PHP App to VPS
-
 on:
   push:
     branches:
